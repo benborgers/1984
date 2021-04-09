@@ -1,7 +1,6 @@
 import React, { useLayoutEffect } from 'react'
 import { Root, Routes } from 'react-static'
-
-import { Router, useLocation } from 'components/Router'
+import { Router, useLocation } from '@reach/router'
 
 import '../dist.css'
 
