@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Head } from 'react-static'
-import { useLocation, navigate } from '@reach/router'
+import { useLocation, navigate, Link } from '@reach/router'
 import { motion, AnimatePresence } from 'framer-motion'
 
 import Analysis from '../containers/Analysis'
@@ -68,9 +68,15 @@ export default function Layout({ title, children }) {
                     </nav>
                 </motion.div>
 
-                <main>
-                    {children}
-                </main>
+                <div>
+                    <div class="mb-4">
+                        <Link to="/" className="text-gray-400 hover:text-gray-500 font-extrabold duration-150 transition-colors">Brother</Link>
+                    </div>
+
+                    <main>
+                        {children}
+                    </main>
+                </div>
             </div>
 
             <AnimatePresence>
