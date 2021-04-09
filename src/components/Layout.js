@@ -33,9 +33,9 @@ export default function Layout({ title, children }) {
                 <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
             </Head>
 
-            <div className="p-4 sm:p-8">
+            <div className="p-4 pb-40 sm:px-8 sm:pt-8">
                 <motion.div
-                    className="fixed bottom-8 inset-x-0 flex justify-center pointer-events-none"
+                    className="fixed bottom-8 inset-x-0 flex justify-center pointer-events-none z-40"
                     variants={{
                         hide: { y: 100 },
                         show: { y: 0 }
@@ -68,7 +68,14 @@ export default function Layout({ title, children }) {
                     </nav>
                 </motion.div>
 
-                <div>
+                <motion.div
+                    variants={{
+                        hide: { opacity: 0 },
+                        show: { opacity: 1 }
+                    }}
+                    initial="hide"
+                    animate={animate}
+                >
                     <div class="mb-4">
                         <Link to="/" className="text-gray-400 hover:text-gray-500 font-extrabold duration-150 transition-colors">Brother</Link>
                     </div>
@@ -76,7 +83,7 @@ export default function Layout({ title, children }) {
                     <main>
                         {children}
                     </main>
-                </div>
+                </motion.div>
             </div>
 
             <AnimatePresence>

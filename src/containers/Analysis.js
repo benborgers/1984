@@ -17,7 +17,7 @@ export default function Analysis({ onClose }) {
 
     return (
         <motion.div
-            className="bg-gray-100 h-screen w-screen fixed inset-0 p-4 sm:p-8"
+            className="bg-gray-100 h-screen w-screen fixed inset-0 p-4 sm:p-8 z-50"
             initial={{ y: window.innerHeight + 100, opacity: 0.9 }}
             animate={{ y: 0, opacity: 1, transition: { ease: 'easeOut', duration: 0.4 } }}
             exit={{ y: window.innerHeight + 100, opacity: 0.9, transition: { ease: 'easeIn', duration: 0.3 } }}
