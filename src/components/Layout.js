@@ -56,6 +56,7 @@ export default function Layout({ title, children }) {
                                     onClick={() => {
                                         if(item.opensAnalysisPanel) {
                                             setAnalysisPanelOpen(true)
+                                            setAnimate('shrink')
                                         } else {
                                             setAnimate('hide')
                                             setTimeout(() => navigate(item.link), 300)
@@ -72,10 +73,12 @@ export default function Layout({ title, children }) {
                 <motion.div
                     variants={{
                         hide: { opacity: 0 },
-                        show: { opacity: 1 }
+                        show: { opacity: 1 },
+                        shrink: { opacity: 0, scale: 0.7, transition: { duration: 1 } }
                     }}
                     initial="hide"
                     animate={animate}
+                    transition={{ type: 'tween', ease: 'easeInOut' }}
                 >
                     <div className="mb-4">
                         <Link to="/" className="text-gray-400 hover:text-gray-500 font-extrabold duration-150 transition-colors">Brother</Link>
@@ -89,7 +92,10 @@ export default function Layout({ title, children }) {
 
             <AnimatePresence>
                 {analysisPanelOpen && (
-                    <Analysis onClose={() => setAnalysisPanelOpen(false)} />
+                    <Analysis onClose={() => {
+                        setAnalysisPanelOpen(false)
+                        setAnimate('show')
+                    }} />
                 )}
             </AnimatePresence>
         </>
