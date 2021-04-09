@@ -31,9 +31,10 @@ export default function Layout({ title, children }) {
                 <title>{title} — Brother</title>
                 <link rel="icon" href="https://emojicdn.elk.sh/📺" />
                 <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+                <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet"></link>
             </Head>
 
-            <div className="p-4 pb-40 sm:px-8 sm:pt-8">
+            <div className="p-4 pb-40 sm:px-8 sm:pt-8 antialiased text-gray-700">
                 <motion.div
                     className="fixed bottom-8 inset-x-0 flex justify-center pointer-events-none z-40"
                     variants={{
@@ -76,7 +77,7 @@ export default function Layout({ title, children }) {
                     initial="hide"
                     animate={animate}
                 >
-                    <div class="mb-4">
+                    <div className="mb-4">
                         <Link to="/" className="text-gray-400 hover:text-gray-500 font-extrabold duration-150 transition-colors">Brother</Link>
                     </div>
 
