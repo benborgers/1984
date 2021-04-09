@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import { Head } from 'react-static'
 import { useLocation, navigate } from '@reach/router'
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
+
+import Analysis from '../containers/Analysis'
 
 const navLinks = [
     {
@@ -11,12 +13,17 @@ const navLinks = [
     {
         name: 'Products',
         link: '/products'
+    },
+    {
+        name: 'Behind the Curtain',
+        opensAnalysisPanel: true
     }
 ]
 
 export default function Layout({ title, children }) {
     const { pathname } = useLocation()
     const [animate, setAnimate] = useState('show')
+    const [analysisPanelOpen, setAnalysisPanelOpen] = useState(false)
 
     return (
         <>
@@ -38,19 +45,23 @@ export default function Layout({ title, children }) {
                     transition={{ type: 'spring', stiffness: 300, damping: 20, mass: 1.3 }}
                 >
                     <nav className="bg-gray-900 p-2 rounded-full max-w-max mx-auto flex space-x-2 pointer-events-auto">
-                        {navLinks.map(({ name, link }) => {
-                            const isCurrent = pathname === link
+                        {navLinks.map(item => {
+                            const isCurrent = pathname === item.link
+
                             return (
                                 <button
-                                    to={link}
-                                    key={name}
-                                    className={`block px-3 py-1 rounded-full font-medium ${isCurrent ? 'bg-gray-100 text-gray-900' : 'text-gray-100'}`}
+                                    key={item.name}
+                                    className={`block px-3 py-1 rounded-full font-medium focus:outline-none ${isCurrent ? 'bg-gray-100 text-gray-900' : 'text-gray-100'}`}
                                     onClick={() => {
-                                        setAnimate('hide')
-                                        setTimeout(() => navigate(link), 300)
+                                        if(item.opensAnalysisPanel) {
+                                            setAnalysisPanelOpen(true)
+                                        } else {
+                                            setAnimate('hide')
+                                            setTimeout(() => navigate(item.link), 300)
+                                        }
                                     }}
                                 >
-                                    {name}
+                                    {item.name}
                                 </button>
                             )
                         })}
@@ -61,6 +72,12 @@ export default function Layout({ title, children }) {
                     {children}
                 </main>
             </div>
+
+            <AnimatePresence>
+                {analysisPanelOpen && (
+                    <Analysis onClose={() => setAnalysisPanelOpen(false)} />
+                )}
+            </AnimatePresence>
         </>
     )
 }
