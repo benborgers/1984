@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Head } from 'react-static'
 import { useLocation, navigate, Link } from '@reach/router'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion } from 'framer-motion'
 
 import Analysis from '../containers/Analysis'
 
@@ -16,14 +16,20 @@ const navLinks = [
     },
     {
         name: 'Behind the Curtain',
-        opensAnalysisPanel: true
+        opensAnalysis: true
     }
 ]
 
 export default function Layout({ title, children }) {
     const { pathname } = useLocation()
     const [animate, setAnimate] = useState('show')
-    const [analysisPanelOpen, setAnalysisPanelOpen] = useState(false)
+    const [analysisOpen, setAnalysisOpen] = useState(false)
+
+    useEffect(() => {
+        if(analysisOpen === false) {
+            setAnimate('show')
+        }
+    }, [analysisOpen])
 
     return (
         <>
@@ -54,9 +60,8 @@ export default function Layout({ title, children }) {
                                     key={item.name}
                                     className={`block px-3 py-1 rounded-full font-medium focus:outline-none ${isCurrent ? 'bg-gray-100 text-gray-900' : 'text-gray-100'}`}
                                     onClick={() => {
-                                        if(item.opensAnalysisPanel) {
-                                            setAnalysisPanelOpen(true)
-                                            setAnimate('shrink')
+                                        if(item.opensAnalysis) {
+                                            setAnalysisOpen(true)
                                         } else {
                                             setAnimate('hide')
                                             setTimeout(() => navigate(item.link), 300)
@@ -73,8 +78,7 @@ export default function Layout({ title, children }) {
                 <motion.div
                     variants={{
                         hide: { opacity: 0 },
-                        show: { opacity: 1 },
-                        shrink: { opacity: 0, scale: 0.7, transition: { duration: 1 } }
+                        show: { opacity: 1 }
                     }}
                     initial="hide"
                     animate={animate}
@@ -90,14 +94,7 @@ export default function Layout({ title, children }) {
                 </motion.div>
             </div>
 
-            <AnimatePresence>
-                {analysisPanelOpen && (
-                    <Analysis onClose={() => {
-                        setAnalysisPanelOpen(false)
-                        setAnimate('show')
-                    }} />
-                )}
-            </AnimatePresence>
+            <Analysis open={analysisOpen} setOpen={setAnalysisOpen} />
         </>
     )
 }
