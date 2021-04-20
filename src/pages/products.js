@@ -29,7 +29,6 @@ export default () => {
 
             <div className="h-24" />
 
-            {/* Brother Screen */}
             <section className="max-w-screen-xl mx-auto grid grid-cols-2 gap-x-16">
                 <div className="mt-4">
                     <h2 className="text-3xl font-extrabold text-gray-900 mb-8">The all-new <span className="bg-gradient-to-br from-yellow-400 to-red-600 bg-clip-text text-transparent">Brother Screen</span><span className="text-gray-300 font-normal">®</span></h2>
@@ -49,17 +48,15 @@ export default () => {
                 </div>
 
                 <div className="relative">
-                    <div>
-                        <UnsplashPhoto
-                            id="1506377711776-dbdc2f3c20d9"
-                            width={800}
-                        />
-                    </div>
+                    <UnsplashPhoto
+                        id="1506377711776-dbdc2f3c20d9"
+                        width={800}
+                    />
                     <p className="text-white font-handwriting text-3xl transform -rotate-3 absolute top-32 left-6">comes everywhere <br /> with you!</p>
                 </div>
             </section>
 
-            <div className="h-24" />
+            <div className="h-36" />
 
             <section
                 className="max-w-2xl mx-auto bg-gray-900 px-16 py-8 rounded-xl shadow-lg text-white"
@@ -73,8 +70,9 @@ export default () => {
                     <p>
                         Brother Screen recognizes possible problems with your behavior and compliance.
                     </p>
+                    {/* TODO: "rehabilitation" is the torture that Winston endured in the Ministry of Love */}
                     <p>
-                        If problems are detected, Brother provides rehabilitation, in private and away from the rest of society, free of charge.
+                        If problems are detected, Brother provides rehabilitation, in private and away from the rest of society. It’s all free of charge, through the <strong>LoveLife</strong> program.
                     </p>
                     <p>
                         Brother is on your side, protecting you from others and defending you from yourself.
@@ -84,8 +82,30 @@ export default () => {
 
             <div className="h-36" />
 
-            <section>
-                controls dangerous speech to regulate society
+            <section className="max-w-screen-xl mx-auto grid grid-cols-2 gap-x-16">
+                <div className="relative">
+                    <UnsplashPhoto
+                        id="1563804951831-49844db19644"
+                        width={800}
+                    />
+                    <p className="text-white font-handwriting text-3xl transform -rotate-3 absolute bottom-8 left-8">we won this one!</p>
+                </div>
+
+                <div className="mt-4">
+                    <h2 className="text-3xl font-extrabold text-gray-900 mb-8">Keep up with all of Oceania</h2>
+
+                    <div className="space-y-2 text-lg">
+                        <p>
+                            Our enemies continue to fight against our mission, but Brother is equipped and prepared to protect Oceania.
+                        </p>
+                        <p>
+                            Stay up to date with news broadcasts you can trust from your Brother Screen. Whether it’s triumphant, uplifting, or feel-good stories, we’ll report everything that’s fit to see.
+                        </p>
+                        <p className="text-red-600 font-medium">
+                            At the end of the day, the real enemy is ignorance of the world around us.
+                        </p>
+                    </div>
+                </div>
             </section>
         </Layout>
     )
