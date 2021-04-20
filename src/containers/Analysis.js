@@ -21,20 +21,20 @@ export default function Analysis({ open, setOpen }) {
                     <div className="absolute inset-y-0 right-0 pl-10 max-w-full flex">
                         <Transition.Child
                             as={Fragment}
-                            enter="transform transition ease-in-out duration-500 sm:duration-700"
+                            enter="transform transition ease-in-out duration-300 sm:duration-500"
                             enterFrom="translate-x-full"
                             enterTo="translate-x-0"
-                            leave="transform transition ease-in-out duration-500 sm:duration-700"
+                            leave="transform transition ease-in-out duration-300 sm:duration-500"
                             leaveFrom="translate-x-0"
                             leaveTo="translate-x-full"
                         >
                             <div className="relative w-screen max-w-md">
                                 <Transition.Child
                                     as={Fragment}
-                                    enter="ease-in-out duration-500"
+                                    enter="ease-in-out duration-300"
                                     enterFrom="opacity-0"
                                     enterTo="opacity-100"
-                                    leave="ease-in-out duration-500"
+                                    leave="ease-in-out duration-300"
                                     leaveFrom="opacity-100"
                                     leaveTo="opacity-0"
                                 >
@@ -53,9 +53,9 @@ export default function Analysis({ open, setOpen }) {
                                         <Dialog.Title className="text-3xl font-black text-gray-900">Let’s break<br />the fourth wall.</Dialog.Title>
                                     </div>
                                     <div className="mt-6 relative flex-1 px-4 sm:px-6">
-                                        <div className="prose sm:prose-lg">
+                                        <div className="prose">
                                             <p>
-                                                Today, the <em>1984</em>’s government would be a tech company, not a government.
+                                                Today, the oppressing force in <em>1984</em> would be a tech company, not a government.
                                             </p>
                                             <p>
                                                 Inspiration partially from <a href="https://www.forbes.com/sites/kalevleetaru/2019/05/06/as-orwells-1984-turns-70-it-predicted-much-of-todays-surveillance-society" target="_blank">this article</a>. The website itself is modeled after <a href="https://about.google" target="_blank">Google’s company website</a>.
