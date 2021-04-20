@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Head } from 'react-static'
+import { Head, prefetch } from 'react-static'
 import { useLocation, navigate, Link } from '@reach/router'
 import { motion } from 'framer-motion'
 
@@ -54,6 +54,10 @@ export default function Layout({ title, children }) {
                     <nav className="bg-gray-900 p-2 rounded-full max-w-max mx-auto flex space-x-2 pointer-events-auto">
                         {navLinks.map(item => {
                             const isCurrent = pathname === item.link
+
+                            if(item.link) {
+                                prefetch(item.link)
+                            }
 
                             return (
                                 <button
