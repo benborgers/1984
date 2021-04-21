@@ -88,6 +88,10 @@ export default function Layout({ title, children }) {
                     animate={animate}
                     transition={{ type: 'tween', ease: 'easeInOut' }}
                 >
+                    <div className="block sm:hidden bg-red-500 p-2 rounded-lg mb-4">
+                        <p className="text-center font-medium text-white">This site only looks good on computers, because I am lazy.</p>
+                    </div>
+
                     <div className="mb-4">
                         <Link to="/" className="text-gray-400 hover:text-gray-500 font-extrabold duration-150 transition-colors">Brother</Link>
                     </div>
