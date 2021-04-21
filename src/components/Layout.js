@@ -51,7 +51,7 @@ export default function Layout({ title, children }) {
                     animate={animate}
                     transition={{ type: 'spring', stiffness: 300, damping: 20, mass: 1.3 }}
                 >
-                    <nav className="bg-gray-900 p-2 rounded-full max-w-max mx-auto flex space-x-2 pointer-events-auto">
+                    <nav className="bg-gray-900 p-2 rounded-full max-w-max mx-auto flex space-x-2 pointer-events-auto shadow-lg">
                         {navLinks.map(item => {
                             const isCurrent = pathname === item.link
 
