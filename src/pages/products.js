@@ -2,6 +2,7 @@ import React from 'react'
 
 import Layout from '../components/Layout'
 import UnsplashPhoto from '../components/UnsplashPhoto'
+import Annotation from '../components/Annotation'
 
 export default () => {
     return (
@@ -41,9 +42,14 @@ export default () => {
                             The next generation of Brother Screen comes with you <em>wherever you go</em>. Constantly helpful, ready to keep you on track. Leave your worries about unintentional thought crimes in the 1980s — this is {new Date().getFullYear()}.
                         </p>
                         {/* TODO: could include quote about how screens are always monitored, and explanation of panopticon */}
-                        <p>
-                            Representatives from Brother are always monitoring a random subset of screens, as part of our <em>Positive Panopticon</em> program.
-                        </p>
+                        <div>
+                            <span>
+                                Representatives from Brother are always monitoring a random subset of screens, as part of our <em>Positive Panopticon</em> program.
+                            </span>
+                            <Annotation>
+                                hey
+                            </Annotation>
+                        </div>
                     </div>
                 </div>
 
