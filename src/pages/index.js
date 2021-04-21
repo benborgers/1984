@@ -58,7 +58,7 @@ export default () => (
                     We make sure that there’s opportunities for safe enjoyment in Oceania. Brother’s events team is well-versed in preparing productive and pleasant events.
                 </p>
                 <p>
-                    From Hate Week to outdoor rallies, there’s approved activities for everyone who wants them.
+                    From Hate Week to outdoor rallies, there’s approved activities for all who want them.
                 </p>
             </Cell>
         </div>
