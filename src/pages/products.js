@@ -47,7 +47,8 @@ export default () => {
                                 Representatives from Brother are always monitoring a random subset of screens, as part of our <em>Positive Panopticon</em> program.
                             </span>
                             <Annotation>
-                                hey
+                                <p>Winston says that the Thought Police could be monitoring any of the Telescreens at any time, and that “you had to live... in the assumption that every sound you made was overheard, and... every movement scrutinized” (3).</p>
+                                <p>This reminded me of the concept of the Panopticon, a concept of a prison designed in the 18th century where prisoners do not know if they are currently being watched by a few guards. Therefore they’re forced to constantly act as though they’re being watched.</p>
                             </Annotation>
                         </div>
                     </div>
