@@ -41,7 +41,6 @@ export default () => {
                         <p>
                             The next generation of Brother Screen comes with you <em>wherever you go</em>. Constantly helpful, ready to keep you on track. Leave your worries about unintentional thought crimes in the 1980s — this is {new Date().getFullYear()}.
                         </p>
-                        {/* TODO: could include quote about how screens are always monitored, and explanation of panopticon */}
                         <div>
                             <span>
                                 Representatives from Brother are always monitoring a random subset of screens, as part of our <em>Positive Panopticon</em> program.
