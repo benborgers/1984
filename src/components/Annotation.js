@@ -17,7 +17,7 @@ export default function Annotation({ children }) {
                         leaveFrom="transform scale-100 opacity-100"
                         leaveTo="transform scale-95 opacity-0"
                     >
-                        <Popover.Panel static className="bg-white ring-1 ring-black ring-opacity-5 absolute p-4 rounded-lg shadow-lg text-base space-y-2" style={{ width: 64 * 2 * 4 }}>
+                        <Popover.Panel static className="bg-white ring-1 ring-black ring-opacity-5 absolute p-4 rounded-lg shadow-lg text-base text-gray-700 space-y-2 text-left" style={{ width: 64 * 2 * 4 }}>
                             {children}
                         </Popover.Panel>
                     </Transition>

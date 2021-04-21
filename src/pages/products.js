@@ -77,9 +77,16 @@ export default () => {
                         Brother Screen recognizes possible problems with your behavior and compliance.
                     </p>
                     {/* TODO: "rehabilitation" is the torture that Winston endured in the Ministry of Love */}
-                    <p>
-                        If problems are detected, Brother provides rehabilitation, in private and away from the rest of society. It’s all free of charge, through the <strong>LoveLife</strong> program.
-                    </p>
+                    <div>
+                        <span>If problems are detected, Brother provides rehabilitation, in private and away from the rest of society. It’s all free of charge, through the <strong>LoveLife</strong> program.</span>
+                        <Annotation>
+                            <p>The LoveLife program is the modern-day, corporatized version of the Ministry of Love.</p>
+                            <p>This “rehabilitation” that they claim to provide is actually the torture that Winston endured in the Ministry of Love.</p>
+                            <p>
+                                The Party would probably consider their torture rehabilitation though: O’Brien says that “we reshape [heretics]”, “burn all evil and all illusion out of him”, and “make the brain perfect”.
+                            </p>
+                        </Annotation>
+                    </div>
                     <p>
                         Brother is on your side, protecting you from others and defending you from yourself.
                     </p>
