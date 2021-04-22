@@ -82,7 +82,7 @@ export default () => {
                             <p>The LoveLife program is the modern-day, corporatized version of the Ministry of Love.</p>
                             <p>This “rehabilitation” that they claim to provide is actually the torture that Winston endured in the Ministry of Love.</p>
                             <p>
-                                The Party would probably consider their torture rehabilitation though: O’Brien says that “we reshape [heretics]”, “burn all evil and all illusion out of him”, and “make the brain perfect”.
+                                The Party would probably consider their torture rehabilitation though: O’Brien says that “we reshape [heretics]”, “burn all evil and all illusion out of him”, and “make the brain perfect” (255).
                             </p>
                         </Annotation>
                     </div>
