@@ -76,7 +76,6 @@ export default () => {
                     <p>
                         Brother Screen recognizes possible problems with your behavior and compliance.
                     </p>
-                    {/* TODO: "rehabilitation" is the torture that Winston endured in the Ministry of Love */}
                     <div>
                         <span>If problems are detected, Brother provides rehabilitation, in private and away from the rest of society. It’s all free of charge, through the <strong>LoveLife</strong> program.</span>
                         <Annotation>
