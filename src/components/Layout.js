@@ -40,7 +40,7 @@ export default function Layout({ title, children }) {
                 <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet"></link>
             </Head>
 
-            <div className="p-4 pb-52 sm:px-8 sm:pt-8 antialiased text-gray-700">
+            <div className="p-4 pb-64 sm:px-8 sm:pt-8 antialiased text-gray-700">
                 <motion.div
                     className="fixed bottom-8 inset-x-0 flex justify-center pointer-events-none z-40"
                     variants={{

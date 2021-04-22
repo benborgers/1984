@@ -113,9 +113,16 @@ export default () => {
                         <p>
                             Stay up to date with news broadcasts you can trust from your Brother Screen. Whether it’s triumphant, uplifting, or feel-good stories, we’ll report everything that’s fit to see.
                         </p>
-                        <p className="text-red-600 font-medium">
-                            At the end of the day, the real enemy is ignorance of the world around us.
-                        </p>
+                        <div>
+                            <span className="text-red-600 font-medium">
+                                At the end of the day, the real enemy is ignorance of the world around us.
+                            </span>
+                            <Annotation>
+                                <p>The irony is that the Party and Big Brother <em>want</em> to keep everyone ignorant, and that the “news” that’s fed to them through state-run media is falsified to keep them ignorant.</p>
+                                <p>While they claim that there are idealogical differences between the states, Goldstein’s book reveals that the actual goal of war is “to use up the products of the machine without raising the general standard of living” (188).</p>
+                                <p>In this section of the website, Brother claims to want to keep citizens well-informed, while in the same section further obscuring it.</p>
+                            </Annotation>
+                        </div>
                     </div>
                 </div>
             </section>
