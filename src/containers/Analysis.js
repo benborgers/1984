@@ -58,7 +58,13 @@ export default function Analysis({ open, setOpen }) {
                                                 Today, the oppressing force in <em>1984</em> would be a tech company, not a government.
                                             </p>
                                             <p>
-                                                Inspiration partially from <a href="https://www.forbes.com/sites/kalevleetaru/2019/05/06/as-orwells-1984-turns-70-it-predicted-much-of-todays-surveillance-society" target="_blank">this article</a>. The website itself is modeled after <a href="https://about.google" target="_blank">Google’s company website</a>.
+                                                Tech companies monitor our every move, facilitate every transaction, and there’s several of their devices listening to you right now.
+                                            </p>
+                                            <p>
+                                                This website shows what the Party and Big Brother could look like today as a modern-day tech company, pitching its dystopian offerings as upsides for consumers.
+                                            </p>
+                                            <p>
+                                                Inspiration partially from <a href="https://www.forbes.com/sites/kalevleetaru/2019/05/06/as-orwells-1984-turns-70-it-predicted-much-of-todays-surveillance-society" target="_blank">this article on <em>1984</em></a>. Direct quotes are included in three places on the Products page, marked by blue asterisks.
                                             </p>
                                         </div>
                                     </div>
