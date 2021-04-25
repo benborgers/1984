@@ -4,7 +4,7 @@ import Layout from '../components/Layout'
 
 const Cell = ({ title, color, left = false, children }) => {
     return (
-        <div className={`border-gray-100 p-4 pl-8 ${left ? 'col-start-1 col-end-3 border-l-4 ' : 'col-start-2 col-end-4 border-r-4'}`}>
+        <div className={`p-8 bg-white rounded border border-gray-200 shadow`}>
             <h2 className={`${color} text-2xl font-medium mb-4`}>{title}</h2>
             <div className="space-y-4 text-lg">
                 {children}
@@ -25,7 +25,7 @@ export default () => (
 
         <div className="h-24" />
 
-        <div className="grid grid-cols-3 gap-y-16 max-w-screen-lg mx-auto">
+        <div className="grid grid-cols-2 gap-8 max-w-screen-lg mx-auto">
             <Cell title="Stabilize Life" color="text-blue-500" left>
                 <p>
                     We’re here to make sure things go smoothly.
