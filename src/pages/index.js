@@ -4,7 +4,7 @@ import Layout from '../components/Layout'
 
 const Cell = ({ title, color, left = false, children }) => {
     return (
-        <div className={`p-8 bg-white rounded border border-gray-200 shadow`}>
+        <div className={`p-8 bg-white rounded border-2 border-gray-200`}>
             <h2 className={`${color} text-2xl font-medium mb-4`}>{title}</h2>
             <div className="space-y-4 text-lg">
                 {children}
