@@ -2,7 +2,7 @@ import React from 'react'
 
 import Layout from '../components/Layout'
 
-const Cell = ({ title, color, left = false, children }) => {
+const Cell = ({ title, color, children }) => {
     return (
         <div className={`p-8 bg-white rounded border-2 border-gray-200`}>
             <h2 className={`${color} text-2xl font-medium mb-4`}>{title}</h2>
