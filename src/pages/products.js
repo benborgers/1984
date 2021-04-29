@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Layout from '../components/Layout'
-import UnsplashPhoto from '../components/UnsplashPhoto'
+import Photo from '../components/Photo'
 import Annotation from '../components/Annotation'
 
 export default () => {
@@ -21,9 +21,8 @@ export default () => {
                         <br />while thinking less.
                     </p>
                 </div>
-                <UnsplashPhoto
-                    id="1600856209923-34372e319a5d"
-                    width={800}
+                <Photo
+                    name="hand-holding-phone.jpeg"
                     className="col-start-2 col-span-11 row-start-1"
                 />
             </section>
@@ -54,8 +53,8 @@ export default () => {
                 </div>
 
                 <div className="relative">
-                    <UnsplashPhoto
-                        id="1506377711776-dbdc2f3c20d9"
+                    <Photo
+                        name="girl-holding-phone.jpeg"
                         width={800}
                     />
                     <p className="text-white font-handwriting text-3xl transform -rotate-3 absolute top-32 left-6">comes everywhere <br /> with you!</p>
@@ -96,8 +95,8 @@ export default () => {
 
             <section className="max-w-screen-xl mx-auto grid grid-cols-2 gap-x-16">
                 <div className="relative">
-                    <UnsplashPhoto
-                        id="1563804951831-49844db19644"
+                    <Photo
+                        name="war.jpeg"
                         width={800}
                     />
                     <p className="text-white font-handwriting text-3xl transform -rotate-3 absolute bottom-8 left-8">we won this one!</p>
